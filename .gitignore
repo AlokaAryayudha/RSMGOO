@@ -3,4 +3,5 @@ node_modules/
 /playwright-report/
 /playwright/.cache/
 /Data/DataAdmin.js
+/Data/ListData.js
 
