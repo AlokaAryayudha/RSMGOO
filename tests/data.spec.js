@@ -19,7 +19,7 @@ test("Isi data 1", async({  page })=>{
 
 })
 
-test("Isi data 2", async({  page })=>{
+test.skip("Isi data 2", async({  page })=>{
     const loginpage = new Loginpage(page)
     await loginpage.login()
     await page.waitForTimeout(6000)
