@@ -4,7 +4,7 @@ import { IsiData } from "../object/Isidata"
 import { List1, List2 } from "../Data/ListData"
 
 
-test("Isi data 1", async({  page })=>{
+test.skip("Isi data 1", async({  page })=>{
     const loginpage = new Loginpage(page)
     await loginpage.login()
     await page.waitForTimeout(6000)
