@@ -74,9 +74,9 @@ export class IsiData {
         
      
         await this.date.click()
-        await this.iframe.getByRole('cell', { name: '▶' }).click()
+        // await this.iframe.getByRole('cell', { name: '▶' }).click()
         await this.page.waitForTimeout(3000)
-        await this.iframe.getByRole('cell', { name: '5', exact: true }).first().click()
+        await this.iframe.getByRole('cell', { name: '6' }).nth(1).click()
 
         await this.simpanseleksi.click()
         await this.page.waitForTimeout(2000)
@@ -149,9 +149,9 @@ export class IsiData {
         
      
         await this.date.click()
-        await this.iframe.getByRole('cell', { name: '▶' }).click()
+        // await this.iframe.getByRole('cell', { name: '▶' }).click()
         await this.page.waitForTimeout(3000)
-        await this.iframe.getByRole('cell', { name: '8', exact: true }).click()
+        await this.iframe.getByRole('cell', { name: '11' }).click()
 
         await this.simpanseleksi.click()
         await this.page.waitForTimeout(2000)
