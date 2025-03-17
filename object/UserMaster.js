@@ -14,6 +14,7 @@ export class Userbaru{
         this.searchuser = this.iframe.getByRole('searchbox', { name: 'Search:' })
         this.userkandidat = this.iframe.getByRole('gridcell', { name: '$(data)' }).first()
         this.masteruserbaru = this.page.getByRole('link', { name: 'Master User Baru' })
+        this.konfirmasibtn = this.iframe.locator('#btnSimpan')
     }
 
     mencarikandidat = async(data) =>{
@@ -32,7 +33,8 @@ export class Userbaru{
 
         const userkandidat = this.iframe.getByRole('gridcell', { name: `${data}` }).first();
         
-        await userkandidat.waitFor();
-        await userkandidat.click();
+        await userkandidat.waitFor()
+        await userkandidat.click()
+        await this.konfirmasibtn.click()
     }
 }
