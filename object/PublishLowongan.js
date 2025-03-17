@@ -44,14 +44,15 @@ export class PasangLowongan {
         await this.page.waitForTimeout(3000)
 
         await this.date1.click()
-        await this.iframe.getByRole('cell', { name: '27' }).nth(1).click()
+        // await this.iframe.getByRole('cell', { name: '▶' }).click()
+        // await this.page.waitForTimeout(3000)
+        await this.iframe.getByRole('cell', { name: '10' }).click()
         await this.page.waitForTimeout(3000)
 
         await this.date2.click()
-        await this.iframe.getByRole('cell', { name: '▶' }).click()
+        // await this.iframe.getByRole('cell', { name: '▶' }).click()
         await this.page.waitForTimeout(3000)
-        await this.iframe.getByRole('cell', { name: '5', exact: true }).first().click()
-        // await this.iframe.getByRole('cell', { name: '1', exact: true }).first().click()
+        await this.iframe.getByRole('cell', { name: '14' }).click()
         await this.page.waitForTimeout(3000)
 
         await this.savebut.click()
@@ -78,13 +79,15 @@ export class PasangLowongan {
         await this.page.waitForTimeout(3000)
 
         await this.date1.click()
-        await this.iframe.getByRole('cell', { name: '27' }).nth(1).click()
+        // await this.iframe.getByRole('cell', { name: '▶' }).click()
+        // await this.page.waitForTimeout(3000)
+        await this.iframe.getByRole('cell', { name: '10' }).click()
         await this.page.waitForTimeout(3000)
 
         await this.date2.click()
-        await this.iframe.getByRole('cell', { name: '▶' }).click()
-        await this.page.waitForTimeout(3000)
-        await this.iframe.getByRole('cell', { name: '8', exact: true }).click()
+        // await this.iframe.getByRole('cell', { name: '▶' }).click()
+        // await this.page.waitForTimeout(3000)
+        await this.iframe.getByRole('cell', { name: '19' }).click()
         await this.page.waitForTimeout(3000)
 
         await this.savebut.click()
