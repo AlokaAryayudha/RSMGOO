@@ -7,7 +7,7 @@ import { Userbaru } from "../object/UserMaster"
 
 
 
-test.skip("Administrasi", async({ page }) => {
+test.only("Administrasi", async({ page }) => {
     const loginpage = new Loginpage(page)
     await loginpage.login()
     await page.pause()
